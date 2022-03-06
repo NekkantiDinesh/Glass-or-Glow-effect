@@ -1,0 +1,54 @@
+*{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.body{
+    background-image: url(./glass.jpg);
+    border-radius: 90px 20px 90px 20px;
+    transition: 2s;
+}
+
+.innerbody{
+    font-family: sans-serif;
+    border-radius: 90px 20px 90px 20px;
+    background-image: linear-gradient(rgba(255, 0, 140, 0.945),rgba(0, 162, 255, 0.945));
+    transition: 2s;
+}
+
+h1{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    animation: h1 1s ease-in-out infinite alternate;
+}
+
+.innerbody:hover{
+    background-image: linear-gradient(rgba(0, 162, 255, 0.945) rgba(255, 0, 140, 0.945));
+    box-shadow: 20px 0px 50px rgba(0, 162, 255, 0.945);
+    transition: 0.5s;
+    border-radius: 20px 100px 20px 100px;
+}
+
+.body:hover{
+    transition: 0.5s;
+    border-radius: 20px 100px 20px 100px;
+}
+
+h1:hover{
+    color: white;
+    transition: 1s;
+}
+
+@keyframes h1{
+    from {
+      text-shadow: 0 0 2px #fff, 0 0 70px #030102;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 80px #000000;
+    }
+}
